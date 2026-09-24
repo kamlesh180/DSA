@@ -24,7 +24,7 @@ public class prefixSum {
     }
 
     public static void main(String[] args) {
-        int numbers[] ={1,-2,6,-1,3};
+        int numbers[] ={1,2,3,4,5};
         prefix_sum(numbers); 
     }
 }
