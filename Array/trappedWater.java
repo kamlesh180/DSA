@@ -16,14 +16,13 @@ public class trappedWater {
             rightMax[i] = Math.max(height[i],rightMax[i+1]);
         }
         int trappedWater = 0; 
-        //loop
-
         for(int i=0; i<n; i++){
+            
             //waaterLevel = min(leftmax bound , rightmax bound)
             
             int waterLevel = Math.min(leftMax[i] , rightMax[i]);
 
-            //trapped water = waterLevel - height[i]
+            //trapped water = waterLevel - height
             trappedWater += waterLevel - height[i];
         }
         return trappedWater;
