@@ -1,13 +1,12 @@
-import java.util.*;
 public class trappedWater {
     public static int trappedRainwater (int height[]){ //O(n)
         int n = height.length;
 
         //calculate left max boundary - array
         int leftMax[] = new int[n];
-        leftMax[0] = height[n-1];
+        leftMax[0] = height[0];
         for(int i=1; i<n; i++){
-            leftMax[i] = Math.max(height[i], leftMax[i]);
+            leftMax[i] = Math.max(height[i], leftMax[i-1]);
         }
 
         //calculate right max boundary - array
