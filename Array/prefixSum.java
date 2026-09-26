@@ -22,6 +22,7 @@ public class prefixSum {
         }
               System.out.println("Maximum sum is : " + maxSum);
     }
+    //main function 
 
     public static void main(String[] args) {
         int numbers[] ={1,2,3,4,5};
